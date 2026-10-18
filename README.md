@@ -1,3 +1,7 @@
+
+
+[![DOI](https://zenodo.org/badge/1424514291.svg)](https://doi.org/10.5281/zenodo.23455011)
+
 # Swarini: compact Indic TTS distillation
 
 Swarini is a profile-driven pipeline for distilling smaller, single-voice Indic TTS models from
