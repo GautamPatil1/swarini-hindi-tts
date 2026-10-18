@@ -1,0 +1,32 @@
+[project]
+name = "swarini-indic-training"
+version = "0.1.0"
+description = "Profile-driven Indic TTS distillation and evaluation for Swarini"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.0.1",
+    "huggingface-hub>=1.31.0",
+    "jiwer>=4.0.0",
+    "kokoro==0.9.4",
+    "misaki==0.9.4",
+    "phonemizer-fork==3.3.2",
+    "espeakng-loader==0.2.4",
+    "matplotlib>=3.11.2",
+    "onnx>=1.22.0",
+    "onnxruntime>=1.30.0",
+    "openai-whisper>=20250625",
+    "scipy>=1.18.1",
+    "soundfile>=0.14.0",
+    "torch>=2.14.0",
+    "torchaudio>=2.11.0",
+]
+
+[project.optional-dependencies]
+indicvoice = [
+    "indic-voice @ git+https://github.com/Bindkushal/indic-voice@57240e779560e8c3d022836f4191e0db6dff9018",
+    "indic-g2p @ git+https://github.com/Bindkushal/indic-g2p@6bc9ca45fb06955bb19057344ac6a4e400ed4c95",
+]
+indic-g2p = [
+    "indic-g2p @ git+https://github.com/Bindkushal/indic-g2p@6bc9ca45fb06955bb19057344ac6a4e400ed4c95",
+]

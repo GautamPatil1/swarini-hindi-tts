@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "punjabi-indicvoice-hf-alpha-template",
+  "run_name": "pa_indicvoice_hf_alpha",
+  "language": {
+    "name": "Punjabi",
+    "iso": "pa",
+    "teacher_code": "pa",
+    "indiccorp_code": "pa",
+    "unicode_range": [2560, 2687]
+  },
+  "teacher": {
+    "backend": "indicvoice",
+    "repo_id": "Bindkushal/IndicVoice-82M",
+    "revision": "2cf8fffbdf72a6fdee5cf841323a161d958b2e0a",
+    "model_file": "indicvoice-v1_0.pth",
+    "voice": "hf_alpha",
+    "known_checkpoint_sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+    "same_weights_as": "hexgrad/Kokoro-82M/kokoro-v1_0.pth"
+  },
+  "phonemizer": {
+    "backend": "indic_g2p",
+    "language": "pa",
+    "class": "G2P",
+    "symbol_map": {}
+  },
+  "corpus": {
+    "path": "training/data/punjabi_sents.json",
+    "dataset": "ai4bharat/IndicCorpV2",
+    "revision": "2d7285e6ce14fdb3fb2449c9f89427b9f582ac3f",
+    "files": ["data/pa.txt"],
+    "count": 12000,
+    "held_out": 200,
+    "script_fraction": 0.85
+  },
+  "student": {
+    "n_token": 178,
+    "sample_rate": 24000,
+    "text_preset": "s+mlp",
+    "decoder_preset": "A"
+  },
+  "sample_text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?"
+}

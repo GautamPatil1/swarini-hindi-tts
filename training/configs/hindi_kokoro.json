@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "hindi-kokoro-hf-alpha",
+  "legacy_compatible": true,
+  "run_name": "hi_hf_alpha",
+  "language": {
+    "name": "Hindi",
+    "iso": "hi",
+    "teacher_code": "h",
+    "indiccorp_code": "hi",
+    "unicode_range": [2304, 2431]
+  },
+  "teacher": {
+    "backend": "kokoro",
+    "repo_id": "hexgrad/Kokoro-82M",
+    "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+    "model_file": "kokoro-v1_0.pth",
+    "voice": "hf_alpha"
+  },
+  "phonemizer": {
+    "backend": "misaki_espeak",
+    "language": "hi",
+    "symbol_map": {}
+  },
+  "corpus": {
+    "path": "training/data/hindi_sents.json",
+    "dataset": "ai4bharat/IndicCorpV2",
+    "revision": "2d7285e6ce14fdb3fb2449c9f89427b9f582ac3f",
+    "files": ["data/hi-1.txt", "data/hi-2.txt", "data/hi-3.txt"],
+    "held_out": 200,
+    "script_fraction": 0.85
+  },
+  "student": {
+    "n_token": 178,
+    "sample_rate": 24000,
+    "text_preset": "s+mlp",
+    "decoder_preset": "A"
+  },
+  "sample_text": "नमस्ते, आप कैसे हैं?"
+}

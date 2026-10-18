@@ -1,0 +1,15 @@
+Swarini Hindi TTS: provenance and attribution
+
+This project is a Hindi adaptation that substantially reuses and modifies the
+training and inference implementation of Paradee by Sahil Mahendrakar:
+
+  https://github.com/sahilmahendrakar/paradee
+
+The original paper citation and upstream link are provided in MODEL_CARD.md and
+README.md. The upstream source and this adaptation are distributed under
+Apache-2.0. This project is not an official Paradee release and is not endorsed
+by its author.
+
+Swarini also uses Kokoro-82M as its frozen teacher and Misaki for phonemization.
+The Hindi text corpus is derived from AI4Bharat IndicCorpV2. Their own notices
+and dataset terms remain applicable; see README.md and training/data/README.md.
