@@ -6,7 +6,7 @@ The repository also includes a wired IndicVoice loader and starter Hindi, Punjab
 profiles. The completed training result in this repository is Hindi with Kokoro-82M.
 
 See the [model card](MODEL_CARD.md) for intended use, data, provenance, and evaluation limits.
-The [working paper draft](paper/swarini_hindi_working_draft.md) records the method and lists the
+The [paper](paper/swarini_hindi.md) records the method and lists the
 evaluation.
 
 ## Teacher choices and current language support
