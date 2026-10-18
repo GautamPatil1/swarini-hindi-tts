@@ -92,17 +92,6 @@ The included Hindi text comes from public
 source revision, and filtering are documented in [training/data/README.md](training/data/README.md).
 The teacher generates the speech targets; Whisper is optional for transcription-based evaluation.
 
-## Whisper-tiny ASR spot check
-
-Five short prompts generated with the FP32 student export were transcribed using OpenAI Whisper's
-multilingual `tiny` model (`language="hi"`, CPU). Repository text normalization and `jiwer` scoring
-gave **116.7% WER** and **116.0% CER**. For `नमस्ते, आप कैसे हैं?`, Whisper returned
-`namaste you kasi hai`. The 72.1 MB checkpoint downloads on first use and is cached.
-
-This small diagnostic is not a Hindi quality benchmark. Whisper tiny produced mostly garbled
-transcripts on these samples; use a larger test set and native-speaker listening before making
-quality claims.
-
 ## Attribution and prior work
 
 Swarini is a Hindi adaptation built with substantial reference to and code adaptation from
